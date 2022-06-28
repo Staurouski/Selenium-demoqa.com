@@ -1,0 +1,93 @@
+{
+  "id": "b30b170c-3fc8-4bfd-92bb-d48a00f5698b",
+  "version": "2.0",
+  "name": "https://demoqa.com/",
+  "url": "https://demoqa.com",
+  "tests": [{
+    "id": "7f28eeb5-ca5a-485a-a69e-d4cee82687e4",
+    "name": "Check box and radio button",
+    "commands": [{
+      "id": "4fe9e401-cf14-4334-83e7-0c6d7971afb3",
+      "comment": "",
+      "command": "open",
+      "target": "/elements",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "407577e5-075e-4470-a35c-eaad7bc97e5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show #item-1 > .text",
+      "targets": [
+        ["css=.show #item-1 > .text", "css:finder"],
+        ["xpath=//li[@id='item-1']/span", "xpath:idRelative"],
+        ["xpath=//li[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Check Box')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a50be1bd-f05e-4a73-8008-528659cd6b40",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rct-icon-uncheck > path",
+      "targets": [
+        ["css=.rct-icon-uncheck > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "af0143f9-7edb-4a88-9798-6cb53e0e6a41",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.rct-icon-expand-close",
+      "targets": [
+        ["css=.rct-icon-expand-close", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c37534e6-dd90-4a45-8402-8673881a2177",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show #item-2 > .text",
+      "targets": [
+        ["css=.show #item-2 > .text", "css:finder"],
+        ["xpath=//li[@id='item-2']/span", "xpath:idRelative"],
+        ["xpath=//li[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Radio Button')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56071f8c-4d42-445a-b472-618f189164a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-control:nth-child(2) > .custom-control-label",
+      "targets": [
+        ["css=.custom-control:nth-child(2) > .custom-control-label", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div[2]/div[2]/div[2]/div[2]/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Yes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f89d10f-bf25-4584-b15d-cf901d163d00",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-6",
+      "targets": [
+        ["css=.col-md-6", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bcb8ba43-16ad-45f6-946c-fb9624dea82e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7f28eeb5-ca5a-485a-a69e-d4cee82687e4"]
+  }],
+  "urls": ["https://demoqa.com/"],
+  "plugins": []
+}
